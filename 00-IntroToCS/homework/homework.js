@@ -4,7 +4,7 @@ function BinarioADecimal(num) {
   // tu codigo aca
   num = num+'';
   let bin = num;
-  num = num.toString().split('').reverse();
+  num = num.split('').reverse();
   let resultado=0;
   
   for(let i = 0; i < num.length; i ++){      
