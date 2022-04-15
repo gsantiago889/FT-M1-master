@@ -12,5 +12,6 @@ function     person() {
     function lastName() {
         return last;
     } 
-    alert(sayHello + ' ' + firstName() + ' ' + lastName());
+    console.log(sayHello + ' ' + firstName() + ' ' + lastName());
 }
+    person()

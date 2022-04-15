@@ -13,22 +13,22 @@ Determiná que será impreso en la consola, sin ejecutar el código.
 x = 1;
 var a = 5;
 var b = 10;
-var c = function(a, b, c) {
+var c = function(a, b, c) { // 5, 10, function
   var x = 10;
-  console.log(x);
-  console.log(a);
+  console.log(x); //10
+  console.log(a); //5
   var f = function(a, b, c) {
-    b = a;
-    console.log(b);
-    b = c;
-    var x = 5;
+    b = a; // 5 || function
+    console.log(b); // 5 || function
+    b = c; // 5 || function
+    var x = 5; //5
   }
   f(a,b,c);
   console.log(b);
 }
 c(8,9,10);
-console.log(b);
-console.log(x);
+console.log(b); // funtion
+console.log(x); // 5
 ```
 
 ```javascript
@@ -149,11 +149,11 @@ var obj = {
    }
 };
 
-console.log(obj.prop.getFullname());
+console.log(obj.prop.getFullname()); // aurelio de rosa
 
 var test = obj.prop.getFullname;
 
-console.log(test());
+console.log(test()); //undefined
 ```
 
 ### Event loop
